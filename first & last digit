@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{  
+	    int n,ld;
+	    cin>>n;
+	     ld=n%10;
+	    int rem,sum;
+	    while(n>0)
+	    {
+	       
+	        rem=n%10;
+	        n=n/10;
+	        
+	    }
+	    sum=ld+rem;
+	    cout<<sum<<endl;
+	}
+	return 0;
+}
