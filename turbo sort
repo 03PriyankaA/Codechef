@@ -1,0 +1,32 @@
+//  We have populated the solutions for the 10 easiest problems for your support.
+// Click on the SUBMIT button to make a submission to this problem.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t,n,a[50],i,j,temp;
+    cin>>t;
+    for(i=0;i<t;i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0;i<t;i++)
+    {
+        for(j=i+1;j<t;j++)
+        {
+            if(a[j]>a[i])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    for(i=0;i<t;i++)
+    {
+        cout<<a[i]<<endl;
+    }
+    return 0;
+}
