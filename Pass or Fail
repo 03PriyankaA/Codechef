@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,x,p,s;
+	    cin>>n>>x>>p;
+	    s=(x*3)-((n-x)*1);
+	    if(s>=p)
+	    {
+	        
+	        cout<<"PASS"<<endl;
+	    }
+	    else
+	    {
+	        
+	        cout<<"FAIL"<<endl;
+	    }
+	    
+	}
+	return 0;
+}
