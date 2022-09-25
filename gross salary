@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int s;
+	    cin>>s;
+	    float gross=0,hra,da;
+	    if(s<1500)
+	    {
+	        hra=(0.1*s);
+	        da=(0.90*s);
+	    }
+	    else
+	    {
+	        hra=500;
+	        da=(0.98*s);
+	    }
+	    gross+=(s+hra+da);
+	    cout<<fixed << setprecision(2)<<gross<<endl;
+	}
+	return 0;
+}
