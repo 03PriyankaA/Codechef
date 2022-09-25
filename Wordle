@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    string s,n[5];
+	    cin>>s;
+	    
+	    string t;
+	    cin>>t;
+	    
+	    for(int i=0;i<5;i++)
+	    {
+	       if(s[i]==t[i])
+	       {
+	          n[i]='G';
+	       }
+	       else
+	       {
+	           n[i]='B';
+	       }
+	    }
+	    for(int i=0;i<5;i++)
+	    {
+	        cout<<n[i];
+	    }
+	   cout<<endl; 
+	}
+	return 0;
+}
